@@ -10,7 +10,7 @@
     <form action="index.html" method="post">
         <h1>THE CODE REVIEW</h1>
         <p>Get the latest news, on how your code is doing right in your inbox</p>
-            <legend>Contact Information</legend>
+            <h2>Contact Information</h2>
 
                 <label for="name">Full Name</label>
                 <input type="text" id="name" name="user-name">
@@ -34,10 +34,36 @@
                 <input type="text" id="zip-code" name="user-zip-code">
 
 
-            <legend>Newsletter</legend>
+            <h2>Newsletter</h2>
                 <p>Select the newsletter you would like to receive</p>
-                <input type="checkbox" id="HTML News" value="int">
 
+                <label class="light" for="html-news">HTML News</label>
+                <input type="checkbox" id="html-news" value="html-news-interest">
+
+                <br>
+               
+                <label class="light" for="css-news">CSS News</label>
+                <input type="checkbox" id="css-news" value="css-news-development" name="user_interest">
+
+                <br>
+
+                <label class="light" for="javascript-news">Javascript News</label>
+                <input type="checkbox" id="javascript-news" value="javascript-news-interest_design" name="user_interest">
+
+                <br>
+
+                <label class="light" for="html">HTML</label>
+                <input type="checkbox" id="html" value="html-business" name="user_interest">
+
+                <br>
+                <p>Newsletter format</p>
+
+                <label class="light" for="plain-text">Plain text</label>
+                <input type="checkbox" id="plain-text" value="plain-text-interest" name="user_interest">
+
+                <p>Other topics you`d like to hear about</p>
+
+                
     </form>
 
 </body>
