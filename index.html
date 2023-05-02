@@ -4,98 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Online Regristration Form</title>
 </head>
 <body>
     <header>
-        <h1>THE CODE REVIEW</h1>
+        <h1>The Code Review</h1>
     </header>
-
     <main>
-
-        <div class="headline1">
+        <div class="headline">
             <h2>Signup for our newsletter</h2>
-            <p>Get the latest news, on how your code is doing right in your inbox</p>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
         </div>
+
         <form action="index.html" method="post">
-            <fieldset id="contact-fieldset">
-                <legend>Contact Information</legend><br>
+            <fieldset class="contact_fieldset">
+                <legend>Contact Information</legend>
+                
+                <div class="flex">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="user_name" placeholder="Required">
+                </div>
 
                 <div class="flex">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="user-name" placeholder="required">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="user_email" placeholder="Required">
                 </div>
+
                 <div class="flex">
-                    <label for="mail">Email Adress</label>
-                    <input type="email" id="mail" name="user-email" placeholder="required">
+                    <label for="telephone">Phone Number</label>
+                    <input type="tel" id="telephone" name="user_telephone">
                 </div>
+
                 <div class="flex">
-                    <label for="number">Phone Number</label>
-                    <input type="tel" id="number" name="user-number" placeholder="ex: (555)555-5555">
+                    <label for="address">Street Address</label>
+                    <input type="text" id="address" name="user_address">
                 </div>
-                <div class="flex">
-                    <label for="street-address">Street address</label>
-                    <input type="text" id="street-address" name="user-street-address" placeholder="required">
-                </div>
+
                 <div class="flex">
                     <label for="city">City</label>
-                    <input type="text" id="city" name="user-city" placeholder="City/Town">
-                </div>
-                <div class="flex">
-                    <label for="state">State</label>
-                    <select id="state" name="user-state" placeholder="required">
-                    
-                        <option value="" selected="selected">Choose State</option> 
-                        <option value="southafrica">southafrica</option>
-                        <option value="poland">Poland</option>
-                        <option value="tasmania">Tasmania</option>
-                        <option value="germany">Germany</option>
-                        <option value="france">France</option>
-                        <option value="patagonia">Patagonia</option>
-                    </select>
+                    <input type="text" id="city" name="user_city">
                 </div>
                 
                 <div class="flex">
+                    <label for="state">State</label>
+                    <select id="state" name="user_state">
+                        
+                        <option value="Choosestate">Choose State</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Kansas">Kansas</option>
+                        <option value="Massachusetts">Massachusetts</option>
+                        <option value="Nevada">Nevada</option>
+                        <option value="New York">New York</option>
+                    </select>
+                </div>
+
+                <div class="flex">
                     <label for="zipcode">Zip Code</label>
-                    <input type="text" id="zipcode" name="user-zipcode" placeholder="5-digit zipcode">
+                    <input type="number" id="zipcode" name="user_zip">
                 </div>
             </fieldset>
 
-            <fieldset id="newsletter-fieldset">
+
+            <fieldset class="newsletter_fieldset">
                 <legend>Newsletter</legend>
-                    <p>Select the newsletter you would like to receive</p>
 
-                    <input type="checkbox" id="html-news" value="html-news-interest">              
-                    <label for="html-news">HTML News</label><br>
-                    
-                    <input type="checkbox" id="css-news" value="css-news-development" name="user_interest">
-                    <label for="css-news">CSS News</label><br>
-                    
-                    <input type="checkbox" id="javascript-news" value="javascript-news-interest_design" name="user_interest">
-                    <label for="javascript-news">Javascript News</label><br>
-                    
+                <p>Select the newsletter you wouild like to receive</p>
+                
+                <input type="checkbox" id="html_news" value="interest_html_news" name="news">
+                <label class="html_news" for="html_news">HTML News</label><br>
 
-                    <p>Newsletter format</p>
+                <input type="checkbox" id="css_news" value="interest_css_news" name="news">
+                <label class="css_news" for="css_news">CSS News</label><br>
 
-                    <input type="checkbox" id="html" value="html-business" name="user_interest"> 
-                    <label for="html">HTML</label><br>
-                    
-                    <input type="checkbox" id="plain-text" value="plain-text-interest" name="user_interest">     
-                    <label for="plain-text">Plain text</label><br><br>
-                    
-            
-                <label for="other-topics">Other topics you`d like to hear about</label><br>
-                <textarea id="other-topics" name="user_topics" placeholder="Enter your requests, comments and suggestions here"></textarea>
+                <input type="checkbox" id="js_news" value="interest_js_news" name="news">
+                <label class="js_news" for="js_news">Javascript News</label><br>
+
+                <p>Newsletter format</p>
+
+                <input type="checkbox" id="html" value="interest_html" name="format">
+                <label class="html" for="html">CSS News</label><br>
+
+                <input type="checkbox" id="plaintext" value="interest_plaintext" name="format">
+                <label class="plaintext" for="plaintext">Plain Text</label><br><br>
+
+                <label for="textbox">Other topics you`d like to hear about</label><br><br>
+                <textarea id="textbox" name="user_message"></textarea>
+
             </fieldset>
-            <button class="button" type="submit">Sign Up</button>
+            <button type="submit">Sign Up</button>
+    <footer>
+        <p>Copyright the Code Review</p>
+    </footer>
         </form>
     </main>
-    <footer>
-        <p>Copyright The Code Review</p>
-    </footer>
 </body>
 </html>

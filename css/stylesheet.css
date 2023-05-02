@@ -1,0 +1,142 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    max-width: 600px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1C3041;
+    color: ghostwhite;
+    text-align: center;
+    width: 100%;
+    padding: 0.5rem 0;
+}
+
+.headline {
+    border-bottom: solid 5px black;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 0 1rem;
+}
+
+p {
+    color: grey;
+}
+
+.contact_fieldset input,
+select,
+textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #e7edf3;
+}
+
+.contact_fieldset input {
+    text-align: right;
+}
+
+.contact_fieldset #zipcode {
+    width: 50%;
+    display: block;
+}
+
+.newsletter_fieldset input {
+    margin-bottom: 1rem;
+    margin-right: .5rem;
+}
+
+legend {
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+fieldset {
+    border: none;
+    padding: 0rem;
+    margin: 2rem 0;
+}
+
+.contact_fieldset {
+    padding-top: 2rem;
+}
+
+form {
+    border-top: solid 2px black;
+    margin: 5px 1rem;
+}
+
+.newsletter_fieldset legend {
+    border-top: solid 2px black;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+.newsletter_fieldset textarea {
+    padding: 3rem 0;
+}
+
+
+button {
+    font-weight: 800;
+    font-size: 1.5rem;
+    background-color: #1C3041;
+    color: ghostwhite;
+    border-radius: 15px;
+    width: 100%;
+    padding: 1.1rem;
+    margin: .5rem 0;
+}
+
+footer {
+    color:#e7edf3;
+    text-align: center;
+    font-weight: 800;
+    margin-bottom: 3rem;
+}
+
+
+/* =========     Media Queries     ===============================
+
+ ============================================================== */
+
+ @media screen and (min-width: 768px) {
+
+    .flex {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contact_fieldset #zipcode {
+        width: 35%;
+        display: inline-block;
+        margin-right: auto;
+        margin-left: 6.7rem;
+    }
+
+    .contact_fieldset input,
+    select {
+        width: 70%;
+    }
+
+    .contact_fieldset label {
+        margin: 2rem 0;
+        padding: 0;
+    }
+
+    
+ }
