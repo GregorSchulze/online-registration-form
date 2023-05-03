@@ -41,6 +41,7 @@ textarea {
     margin: 1rem 0;
     border-radius: 10px;
     border: none;
+    color: grey;
     background-color: #e7edf3;
 }
 
@@ -48,12 +49,17 @@ textarea {
     text-align: right;
 }
 
+.contact_fieldset #zipcode {
+    text-align: left;
+}
+
 .contact_fieldset input:focus,
 .newsletter_fieldset input:focus,
 select:focus,
-textarea:focus{
+textarea:focus {
     background-color: rgb(122, 139, 149);
     color: ghostwhite;
+    transition: 1s;
 }
 
 .contact_fieldset #zipcode {
@@ -93,7 +99,7 @@ form {
 }
 
 .newsletter_fieldset textarea {
-    padding: 3rem 0;
+    padding: 1rem 1rem;
 }
 
 
@@ -122,6 +128,10 @@ footer {
 
  @media screen and (min-width: 768px) {
 
+    * {
+        transition: 0.5s;
+    }
+    
     .flex {
         display: flex;
         flex-direction: row;
@@ -130,7 +140,7 @@ footer {
     }
 
     .contact_fieldset #zipcode {
-        width: 35%;
+        width: 25%;
         display: inline-block;
         margin-right: auto;
         margin-left: 6.7rem;
